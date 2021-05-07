@@ -75,6 +75,14 @@ a:hover {
   overflow: hidden;
   padding-top: 60px;
 }
+.gallery-header {
+  text-align: center;
+  background: url('images/personal/gallery.png') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
@@ -87,7 +95,7 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(0deg);
+  transform: scale(1.6) rotate(0deg);
 }
 .tag {
   background-color: #efefef;
@@ -102,7 +110,7 @@ header .profile-image:hover {
   color: white;
 }
 .card {
-  margin: 30px;
+  margin: 20px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -111,6 +119,15 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.card h2.title {
+  text-align: center;
+}
+
+.card h3.subtitle {
+  text-align: center;
+}
+
 .card:hover {
   border-color: #d2963a;
 }
@@ -133,13 +150,44 @@ ul.skills {
   background: #b45243;
 }
 
-.experience-image {
+.title {
+  transition: all .5s;
+}
+
+.title:hover {
+  transform: scale(1.2);
+}
+
+.card .experience-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 3px solid #f2bd5a;
+  display: flex;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.basket {
+  max-width: 302px;
+  max-height: 403px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
   transition: all .5s;
-  margin-left: 55px;
+}
+
+.column {
+  display: flex;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.basket:hover {
+  transform: scale(1.2);
 }
 
 footer {
@@ -195,7 +243,7 @@ a.social:hover {
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
-      max-width: 1200px;
+      max-width: fit-content;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
